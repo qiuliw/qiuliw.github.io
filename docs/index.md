@@ -1,12 +1,12 @@
 ---
 layout: home
 
-title: 查尔斯的知识库
+title: 小邱のBlog
 titleTemplate: 个人技术知识库，记录和分享个人碎片化、结构化、体系化的技术知识内容
 
 hero:
-  name: 查尔斯的知识库
-  text: 专注 & 洞察 & 分享
+  name: 小邱のBlog
+  text: 做点 & 洞察 & 分享
   tagline: 个人技术知识库，记录 & 分享个人碎片化、结构化、体系化的技术知识内容。
   image:
     src: /logo.png
@@ -22,11 +22,11 @@ hero:
 features:
   - icon:
       src: img/svg/focus.svg
-    title: 保持专注
-    details: “简单比复杂更难，你必须努力让你的想法变得清晰明了，让它变得简单。一旦你做到了简单，你就能搬动大山。” -- 乔布斯
+    title: 为什么开
+    details: “知识需要分享，且如果几月一点动态没有，那是令朋友和关注自己的人(如果有的话)沮丧的。故开此博客，好像自己还在做点事”
   - icon:
       src: img/svg/insight.svg
-    title: 善于洞察
+    title: 细心观察
     details: “我既没有突出的理解力，也没有过人的机智。只在觉察那些稍纵即逝的事物并对其进行精细观察的能力上，我可能在普通人之上。” -- 达尔文
   - icon:
       src: img/svg/knowledge.svg
