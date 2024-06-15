@@ -8,16 +8,16 @@ showComment: false
 
 <img width=100% src="../public/img/svg/about-me-header.svg" alt="头部图" />
 <p align="center">
-  <a href="https://blog.charles7c.top/" target="_blank" style="display: inline-block;">
+  <!-- <a href="https://blog.charles7c.top/" target="_blank" style="display: inline-block;">
     <img alt="个人主页" src="https://img.shields.io/badge/知识库-查尔斯-lightblue?logo=blogger&logoColor=lightblue" />
-  </a>&nbsp;
-    <a href="https://github.com/Charles7c" target="_blank" style="display: inline-block;">
+  </a>&nbsp; -->
+    <a href="https://github.com/qiuliw" target="_blank" style="display: inline-block;">
         <img alt="GitHub个人主页" src="https://img.shields.io/badge/GitHub-Charles7c-lightblue?logo=github" />
     </a>&nbsp;
-    <a href="https://gitee.com/Charles7c" target="_blank" style="display: inline-block;">
+    <a href="https://gitee.com/qiuliw" target="_blank" style="display: inline-block;">
         <img alt="码云个人主页" src="https://img.shields.io/badge/码云-Charles7c-C71D23?logo=gitee&logoColor=C71D23" />
     </a>&nbsp;
-    <a href="https://blog.csdn.net/Charles_7c" target="_blank" style="display: inline-block;">
+    <!-- <a href="https://blog.csdn.net/qiuliw" target="_blank" style="display: inline-block;">
         <img alt="CSDN个人主页" src="https://img.shields.io/badge/CSDN-查尔斯-FC5531?logo=C&logoColor=FC5531" />
     </a>&nbsp;
     <a href="https://juejin.cn/user/685744115170142" target="_blank" style="display: inline-block;">
@@ -25,7 +25,7 @@ showComment: false
     </a>&nbsp;
     <a href="https://www.yuque.com/charles7c" target="_blank" style="display: inline-block;">
         <img alt="语雀个人主页" src="https://img.shields.io/badge/语雀-查尔斯-38D27D" />
-    </a>&nbsp;
+    </a>&nbsp; -->
 </p>
 
 ---
