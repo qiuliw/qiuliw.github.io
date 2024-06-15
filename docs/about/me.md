@@ -6,7 +6,8 @@ lastUpdated: false
 showComment: false
 ---
 
-<img width=100% src="../public/img/svg/about-me-header.svg" alt="头部图" />
+![](../public/img/svg/about-me-header.svg)
+
 <!-- <p align="center">
   <a href="https://blog.charles7c.top/" target="_blank" style="display: inline-block;">
     <img alt="个人主页" src="https://img.shields.io/badge/知识库-查尔斯-lightblue?logo=blogger&logoColor=lightblue" />
@@ -28,21 +29,16 @@ showComment: false
     </a>&nbsp;
 </p> -->
 
-<div align="center">
-    📝 <strong>关于我</strong>
-</div>
 
----
-&nbsp;
-&nbsp;
+
+
 - 👋 Hi, I'm qiuliw
 - 🔭 I'm currently working on backend development
 - 📫 How to reach me: [1807191473@qq.com](mailto:1807191473@qq.com)
 - 📖 My motto: “绝望之为虚妄，正与希望相同。”
 
-&nbsp;
 
-<img width=100% src="../public/img/svg/about-footer.svg" alt="尾部图"/>
+![](../public/img/svg/about-footer.svg)
 
 <!-- 
 ### 后端技术栈
