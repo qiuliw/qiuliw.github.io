@@ -5,7 +5,7 @@ editLink: false
 lastUpdated: false
 ---
 
-<!-- <img width=100% src="../public/img/svg/about-repos-header.svg" alt="头部图" /> -->
+<img width=100% src="../public/img/svg/about-repos-header.svg" alt="头部图" />
 
 <div align="center">
     📝 <strong>小邱的个人技术知识库</strong>

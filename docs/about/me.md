@@ -6,7 +6,7 @@ lastUpdated: false
 showComment: false
 ---
 
-<!-- <img width=100% src="../public/img/svg/about-me-header.svg" alt="头部图" /> -->
+<img width=100% src="../public/img/svg/about-me-header.svg" alt="头部图" />
 <!-- <p align="center">
   <a href="https://blog.charles7c.top/" target="_blank" style="display: inline-block;">
     <img alt="个人主页" src="https://img.shields.io/badge/知识库-查尔斯-lightblue?logo=blogger&logoColor=lightblue" />
