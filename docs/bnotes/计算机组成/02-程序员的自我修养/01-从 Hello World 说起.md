@@ -8,3 +8,7 @@ tags:
 ---
 
 # 从 Hello World 说起
+
+::: tip
+待续...
+:::

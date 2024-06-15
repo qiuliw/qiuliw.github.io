@@ -1,4 +1,5 @@
 {
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "docs/public"
+  "attachmentFolderPath": "docs/public",
+  "alwaysUpdateLinks": true
 }
