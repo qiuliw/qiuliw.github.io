@@ -6,18 +6,18 @@ lastUpdated: false
 showComment: false
 ---
 
-<img width=100% src="../public/img/svg/about-me-header.svg" alt="头部图" />
-<p align="center">
-  <!-- <a href="https://blog.charles7c.top/" target="_blank" style="display: inline-block;">
+<!-- <img width=100% src="../public/img/svg/about-me-header.svg" alt="头部图" /> -->
+<!-- <p align="center">
+  <a href="https://blog.charles7c.top/" target="_blank" style="display: inline-block;">
     <img alt="个人主页" src="https://img.shields.io/badge/知识库-查尔斯-lightblue?logo=blogger&logoColor=lightblue" />
-  </a>&nbsp; -->
+  </a>&nbsp;
     <a href="https://github.com/qiuliw" target="_blank" style="display: inline-block;">
         <img alt="GitHub个人主页" src="https://img.shields.io/badge/GitHub-Charles7c-lightblue?logo=github" />
     </a>&nbsp;
     <a href="https://gitee.com/qiuliw" target="_blank" style="display: inline-block;">
         <img alt="码云个人主页" src="https://img.shields.io/badge/码云-Charles7c-C71D23?logo=gitee&logoColor=C71D23" />
     </a>&nbsp;
-    <!-- <a href="https://blog.csdn.net/qiuliw" target="_blank" style="display: inline-block;">
+    <a href="https://blog.csdn.net/qiuliw" target="_blank" style="display: inline-block;">
         <img alt="CSDN个人主页" src="https://img.shields.io/badge/CSDN-查尔斯-FC5531?logo=C&logoColor=FC5531" />
     </a>&nbsp;
     <a href="https://juejin.cn/user/685744115170142" target="_blank" style="display: inline-block;">
@@ -25,16 +25,26 @@ showComment: false
     </a>&nbsp;
     <a href="https://www.yuque.com/charles7c" target="_blank" style="display: inline-block;">
         <img alt="语雀个人主页" src="https://img.shields.io/badge/语雀-查尔斯-38D27D" />
-    </a>&nbsp; -->
-</p>
+    </a>&nbsp;
+</p> -->
+
+<div align="center">
+    📝 <strong>关于我</strong>
+</div>
 
 ---
-- 👋 Hi, I'm Charles7c
+&nbsp;
+&nbsp;
+- 👋 Hi, I'm qiuliw
 - 🔭 I'm currently working on backend development
-- 📫 How to reach me: [charles7c@126.com](mailto:charles7c@126.com)
-- 📖 My motto: “东隅已逝，桑榆非晚。”
----
+- 📫 How to reach me: [1807191473@qq.com](mailto:1807191473@qq.com)
+- 📖 My motto: “绝望之为虚妄，正与希望相同。”
 
+&nbsp;
+
+<img width=100% src="../public/img/svg/about-footer.svg" alt="尾部图"/>
+
+<!-- 
 ### 后端技术栈
 
 <p>
@@ -137,9 +147,9 @@ showComment: false
   <img src="https://img.shields.io/badge/-PyCharm-C0C0C0?logo=PyCharm&logoColor=000" alt="PyCharm" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-Android%20Studio-C0C0C0?logo=Android-Studio&logoColor=3DDC84" alt="Android Studio" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-VSCode-C0C0C0?logo=Visual-Studio-Code&logoColor=007ACC" alt="VSCode" style="display: inline-block;" />&nbsp;
-</p>
+</p> -->
 
-### 其他
+<!-- ### 其他
 
 <p>
   <img src="https://img.shields.io/badge/-Markdown-000?logo=Markdown&logoColor=FFF" alt="Markdown" style="display: inline-block;" />&nbsp;
@@ -147,4 +157,5 @@ showComment: false
   <img src="https://img.shields.io/badge/-GitHub%20Pages-222?logo=GitHub-Pages&logoColor=FFF" alt="GitHub Pages" style="display: inline-block;" />&nbsp;
   <img src="https://img.shields.io/badge/-Adobe%20Photoshop-A9A9A9?logo=Adobe-Photoshop&logoColor=31A8FF" alt="Adobe Photoshop" style="display: inline-block;" />&nbsp;
 </p>
-<img width=100% src="../public/img/svg/about-footer.svg" alt="尾部图"/>
+
+<img width=100% src="../public/img/svg/about-footer.svg" alt="尾部图"/> -->
