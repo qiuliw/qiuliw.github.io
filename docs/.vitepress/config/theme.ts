@@ -76,7 +76,7 @@ export const themeConfig: DefaultTheme.Config = {
   // 自定义扩展: 评论配置
   commentConfig: {
     type: 'gitalk',
-    showComment: false // 是否显示评论
+    showComment: true // 是否显示评论
   },
   // 自定义扩展: 页脚配置
   footerConfig: {
