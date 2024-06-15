@@ -1,14 +1,16 @@
 ---
 title: vitepress踩坑
 author: 邱荔枝
-date: 2024/06/14 10:05
+date: 2024/06/15 10:05
 categories:
  - Bug万象集
 tags:
  - vitepress
 ---
 
-# 侧边栏遍历路径下文件不能为空
+# vitepress踩坑
+
+## 侧边栏遍历路径下文件不能为空
 
 ```ts
 TypeError: Cannot set properties of undefined (setting 'collapsed')
