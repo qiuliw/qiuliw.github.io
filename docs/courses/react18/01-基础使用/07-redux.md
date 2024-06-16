@@ -1,7 +1,8 @@
 ---
 title: redux
 date: 2024/06/16 22:48
-categories: react18
+categories: 
+ - React
 tags:
 ---
 
@@ -12,3 +13,5 @@ tags:
 	待续……
 
 :::
+
+
