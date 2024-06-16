@@ -1,6 +1,10 @@
 # Node modules
 node_modules/
 
+# .obsidian
+.obsidian
+
+
 # Dist files
 dist/
 lib/
@@ -28,5 +32,3 @@ cache/
 pnpm-global
 TODOs.md
 
-# .obsidian
-.obsidian
