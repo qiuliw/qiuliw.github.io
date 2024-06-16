@@ -3,11 +3,12 @@ title: JSX-组件
 date: 2024/05/10 16:53
 categories:
   - React
-tags:
 ---
+
 # React-18
 
 [官方文档](https://react.xiniushu.com/docs/getting-started.html)
+
 [视频教程](https://www.bilibili.com/video/BV1Rj421o7QF)
 
 # 一、介绍
@@ -36,7 +37,7 @@ cdn创建
 	<script type="text/javascript" src="../js/babel.min.js"></script>
 	<script type="text/babel">
 		const demo = <span>Hello Word</span>
-		ReactDOM.render(demo, document.querySelector('#app'))
+		ReactDOM.render(demo, document.querySelector('#app'));
 	</script>
 
 ```
@@ -94,12 +95,11 @@ cdn创建
     // console.log(React);
     // console.log(ReactDOM);
 </script>
-
 ```
 
-## React.createElement() 认识
+## React.createElement()认识
 
-React.createElement() 是 jsx 编译后的 react 代码结果，该 api 是创建一个元素；
+`React.createElement()` 是 jsx 编译后的 react 代码结果，该 api 是创建一个元素
 
 将如上代码使用该 api 替换，如下：
 
@@ -107,8 +107,7 @@ React.createElement() 是 jsx 编译后的 react 代码结果，该 api 是创�
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta >
+    <meta charset="UTF-8"/>
     <title>Document</title>
 </head>
 <script crossorigin src="<https://unpkg.com/react@18/umd/react.development.js>"></script>
@@ -125,7 +124,6 @@ React.createElement() 是 jsx 编译后的 react 代码结果，该 api 是创�
     // console.log(React);
     // console.log(ReactDOM);
 </script>
-
 ```
 
 # 二、JSX
@@ -147,8 +145,9 @@ const name = 'Hello Word'
 </div>
 
 ```
-
+<span v-pre>
 1. 内联样式，要用 `style={{key:value}}`的形式去写。
+</span>
 
 ```
 <span style={{color:'red',fontSize:'55px'}}>{name}</span>
@@ -175,12 +174,11 @@ const name = 'Hello Word'
 
 ### 变量与函数
 
-```js
+```jsx
 const count =100
 function getName (){
   return 'jock'
 }
-
 function App() {
   return (
     <div className="App">
