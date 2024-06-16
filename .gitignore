@@ -2,9 +2,9 @@
 node_modules/
 
 # .obsidian
-.obsidian/
+.obsidian/workspace.json
 
-workspace.json
+
 
 # Dist files
 dist/

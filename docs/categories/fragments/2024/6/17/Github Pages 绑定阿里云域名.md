@@ -14,15 +14,14 @@ tags:
 
 > 下面讲一下如何在阿里云购买域名并绑定到你的 Github Pages
 
-注册阿里云域名
-=======
+## 注册阿里云域名
 
 1.  进入 [阿里云官网](https://link.juejin.cn?target=https%3A%2F%2Fwww.aliyun.com%2F "https://www.aliyun.com/")
 2.  注册阿里云域名[【域名注册点此进入】](https://link.juejin.cn?target=https%3A%2F%2Fwanwang.aliyun.com%2Fdomain%2F%3Fspm%3D5176.100251.111252.16.1f6c4f15LXISIz "https://wanwang.aliyun.com/domain/?spm=5176.100251.111252.16.1f6c4f15LXISIz")
 3.  选购心仪域名后，如果是第一次购买需要进行实名认证，在订单详情页有提示进行认证 (平均为 4-5 小时的审核时间，审核通过后完成下单，下单的域名同时需要审核时间，审核通过后进入下一步）
 
-域名解析
-====
+## 域名解析
+
 
 当域名状态显示为 `正常` 后，我们便可以开始进行 `域名解析`了，点击右侧操作中的 `解析` 进入 **云解析 DNS** 页面，它的好处是不用我们在本地项目配置解析文件（在本地配置解析文件的话要放入`source`目录中，如果放在根目录里，项目部署时解析文件会被删除）
 
@@ -32,8 +31,8 @@ tags:
 
 ![](../../../../../public/img/2024/fc5de29e31f38e7fd14318daa864cac9_MD5.webp)
 
-CNAME 记录
---------
+## CNAME 记录
+
 
 **使用场景**
 
@@ -57,8 +56,8 @@ CNAME 记录
 
 > 更多添加解析记录介绍请前往 [阿里云帮助中心 - 添加解析记录](https://link.juejin.cn?target=https%3A%2F%2Fhelp.aliyun.com%2Fdocument_detail%2F29725.html%3Fspm%3Da2c4g.121109.0.0.25986527OxYLL3%23h2-cname-2 "https://help.aliyun.com/document_detail/29725.html?spm=a2c4g.121109.0.0.25986527OxYLL3#h2-cname-2")
 
-域名绑定
-====
+## 域名绑定
+
 
 解析完毕后，我们便可以进行域名绑定了，前往你部署博客仓库的 Github Page，在 `Custom domain` 项中可以添加进行解析后的自定义域名
 
