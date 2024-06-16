@@ -25,6 +25,8 @@ SyntaxError: Error parsing JavaScript expression: Unexpected token, expected ","
 
 原因：双花括号为vue的插值语法
 
+## 方法1 
+
 解决：使用`v-pre` 跳过vue解析过程
 
 改正后的文档内容
@@ -40,3 +42,21 @@ SyntaxError: Error parsing JavaScript expression: Unexpected token, expected ","
 <span v-pre>
 1. 内联样式，要用`style={{key:value}}`的形式去写。
 </span>
+
+> 但是markdown语法同样不会被解析
+
+
+## 方法2
+
+**在行内代码中使用`<code v-pre></code>`来包裹**：
+
+```
+1. 内联样式，要用 <code v-pre>{{ biz.xxx }}</code> 的形式去写
+```
+
+显示为
+
+1. 内联样式，要用 <code v-pre>{{ biz.xxx }}</code> 的形式去写
+
+
+

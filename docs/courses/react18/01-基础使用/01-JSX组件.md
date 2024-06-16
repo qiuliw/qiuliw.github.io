@@ -146,12 +146,11 @@ const name = 'Hello Word'
 
 ```
 <span v-pre>
-1. 内联样式，要用 `style={{key:value}}`的形式去写。
+1. 内联样式，要用 <code v-pre>style={{key:value}}</code>`的形式去写。
 </span>
 
 ```
 <span style={{color:'red',fontSize:'55px'}}>{name}</span>
-
 ```
 
 1. 只有一个根标签
