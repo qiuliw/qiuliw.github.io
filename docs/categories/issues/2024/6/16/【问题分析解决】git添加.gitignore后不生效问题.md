@@ -1,7 +1,7 @@
 ---
 title: 【问题分析解决】git添加.gitignore后不生效问题
 date: 2024/06/16 18:11
-isOrigin: false
+isOriginal: false
 author: 他佬
 articleLink: https://blog.csdn.net/xuxu_123_/article/details/131710549
 categories:
