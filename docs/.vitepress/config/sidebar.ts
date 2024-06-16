@@ -13,8 +13,12 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/courses/java/': getItems("courses/java"),
   // '/courses/mysql/': getItems("courses/mysql"),
   // '/courses/mybatis/': getItems("courses/mybatis"),
+  '/courses/react18/': getItems("courses/react18"),
+
 
   '/bnotes/计算机组成/': getItems("bnotes/计算机组成"),
+
+  
 }
 
 /**
