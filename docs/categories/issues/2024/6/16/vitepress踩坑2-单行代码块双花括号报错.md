@@ -7,6 +7,7 @@ tags:
   - vitepress
 ---
 
+# vitepress踩坑2-单行代码块双花括号报错
 
 错误提示
 ```
