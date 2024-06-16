@@ -11,8 +11,12 @@
             "id": "76109f57b6a048cb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "docs/courses/react18/01-基础使用/06-受控组件.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -54,11 +58,13 @@
             }
           },
           {
-            "id": "f2213ee15b23b4c8",
+            "id": "774e3089e3a19f3c",
             "type": "leaf",
             "state": {
-              "type": "bookmarks",
-              "state": {}
+              "type": "outline",
+              "state": {
+                "file": "docs/courses/react18/01-基础使用/06-受控组件.md"
+              }
             }
           }
         ]
@@ -76,49 +82,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f4a555c49618a9d6",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "1703d4faf5f8129c",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "3b4c79ea7ecfe4c1",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
             "id": "5cfa1c27faae021d",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/courses/react18/01-基础使用/06-受控组件.md"
+              }
             }
           }
         ]
@@ -130,14 +100,37 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "templates:插入模板": false
     }
   },
-  "active": "76109f57b6a048cb",
-  "lastOpenFiles": []
+  "active": "1561b9fbb7d5a2d9",
+  "lastOpenFiles": [
+    "docs/courses/react18/01-基础使用/05-列表渲染.md",
+    "docs/courses/react18/01-基础使用/04-ref操作DOM.md",
+    "docs/courses/react18/01-基础使用/03-PureComponent.md",
+    "docs/courses/react18/01-基础使用/02-生命周期.md",
+    "docs/courses/react18/01-基础使用/01-JSX-组件.md",
+    "docs/courses/react18/01-基础使用/06-受控组件.md",
+    "docs/public/img/2024/6d2cdf976ea6b0537847220de321b37c.jpg",
+    "docs/courses/react18/01-基础使用/7、Redux.md",
+    "docs/public/img/2024/e23bee4ce13980ff0be63d5de86e7148.png",
+    "docs/public/笔记模版/转载.md",
+    "docs/public/img/2024/f3b31ebfe2af2630d6d89d64bc394c01.png",
+    "docs/public/img/2024/c9158a9ba490997bb8c283443edd5a05.png",
+    "docs/public/img/2024/ed8bd1f3941ad6f9426e1770a4271fac.png",
+    "docs/public/img/2024/235fb051c72a65480683cdc767c16e70.png",
+    "docs/public/img/2024/fb2d8a214277f94c50c8084f851e003b.png",
+    "docs/public/img/2024/643e2456799c63ae9c1edf41efa203f6.png",
+    "docs/public/img/2024/63a0d4ae03003e4baa719411d3232be7.png",
+    "docs/public/img/2024/783304835f59f584fc3c1acc3c6766f5.png",
+    "docs/courses/react18/output/public",
+    "docs/courses/react18/output",
+    "docs/courses/react18/01-基础使用",
+    "docs/courses/react18",
+    "docs/courses/未命名.md",
+    "docs/public/笔记模版/默认.md",
+    "docs/courses/java/01-Java语法入门/01-开发环境搭建.md",
+    "docs/public/笔记模版"
+  ]
 }

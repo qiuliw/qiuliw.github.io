@@ -1,5 +1,8 @@
 {
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "docs/public",
-  "alwaysUpdateLinks": true
+  "attachmentFolderPath": "docs/public/img/2024",
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "showInlineTitle": false,
+  "promptDelete": false
 }
