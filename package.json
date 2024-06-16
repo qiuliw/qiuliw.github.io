@@ -1,5 +1,5 @@
 {
-  "name": "charles7c-repo",
+  "name": "qiu-repo",
   "description": "小邱的个人知识库，记录 & 分享个人碎片化、结构化、体系化的技术知识内容。",
   "author": "Charles7c",
   "license": "MIT",
@@ -20,8 +20,8 @@
     "mermaid": "9.3.0",
     "unplugin-vue-components": "^0.25.2",
     "vite": "^5.0.3",
-    "vitepress": "^1.2.3",
-    "vitepress-plugin-mermaid": "2.0.16",
+    "vitepress": "1.0.0-rc.31",
+    "vitepress-plugin-mermaid": "2.0.8",
     "vue": "^3.3.9"
   },
   "dependencies": {
@@ -32,9 +32,7 @@
     "fast-glob": "^3.3.2",
     "gitalk": "^1.8.0",
     "gray-matter": "^4.0.3",
-    "jquery": "^3.7.1",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "jquery": "^3.7.1"
   },
   "pnpm": {
     "overrides": {
