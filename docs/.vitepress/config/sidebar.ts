@@ -7,10 +7,10 @@ const sync = fg.sync;
 export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/categories/issues/': getItemsByDate("categories/issues"),
   // '/categories/fragments/': getItemsByDate("categories/fragments"),
-  // '/categories/solutions/': getItemsByDate("categories/solutions"),
+  '/categories/solutions/': getItemsByDate("categories/solutions"),
   // '/categories/tools/': getItemsByDate("categories/tools"),
 
-  '/courses/java/': getItems("courses/java"),
+  // '/courses/java/': getItems("courses/java"),
   // '/courses/mysql/': getItems("courses/mysql"),
   // '/courses/mybatis/': getItems("courses/mybatis"),
   '/courses/react18/': getItems("courses/react18"),

@@ -7,14 +7,14 @@ export const nav: DefaultTheme.Config['nav'] = [
       { text: 'Bug万象集', link: '/categories/issues/index', activeMatch: '/categories/issues/' },
       // { text: '"杂碎"逆袭史', link: '/categories/fragments/index', activeMatch: '/categories/fragments/' },
       // { text: '工具四海谈', link: '/categories/tools/index', activeMatch: '/categories/tools/' },
-      // { text: '方案春秋志', link: '/categories/solutions/index', activeMatch: '/categories/solutions/' }
+      { text: '方案春秋志', link: '/categories/solutions/index', activeMatch: '/categories/solutions/' }
     ],
     activeMatch: '/categories/'
   },
   {
     text: '我的小册',
     items: [
-      { text: 'Java基础快速入门', link: '/courses/java/index', activeMatch: '/courses/java/' },
+      // { text: 'Java基础快速入门', link: '/courses/java/index', activeMatch: '/courses/java/' },
       // { text: 'MySQL快速入门', link: '/courses/mysql/index', activeMatch: '/courses/mysql/' },
       // { text: 'MyBatis快速入门', link: '/courses/mybatis/index', activeMatch: '/courses/mybatis/' }
       { text: 'react18', link: '/courses/react18/index', activeMatch: '/courses/react18/' },
