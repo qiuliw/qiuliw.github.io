@@ -6,7 +6,7 @@ categories:
 tags:
   - react
 ---
-# react搜索高亮的简易实现
+# react搜索高亮的简易实现-dangerouslySetInnerHTML
 
 **效果**![](../../../../../public/img/2024/Pasted%20image%2020240618220230.png)
 
