@@ -1,82 +1,33 @@
-<template>
-  <div id="comment-container"></div>
-</template>
+<script setup lang="ts">
+import { useData } from 'vitepress'
 
-<script lang="ts" setup>
-  import { reactive, toRefs, onMounted } from 'vue';
-  import { useData } from 'vitepress';
-  import md5 from 'blueimp-md5';
-  import $ from 'jquery';
-  import { Message } from '@arco-design/web-vue';
-  import '@arco-design/web-vue/es/message/style/css.js';
-  import Gitalk from 'gitalk';
-  import '../../styles/components/gitalk.css';
-
-  // 定义属性
-  const props = defineProps({
-    commentConfig: Object,
-  });
-
-  const data = reactive({
-    type: props.commentConfig?.type ?? 'gitalk',
-  })
-  const { type } = toRefs(data);
-
-  // 初始化评论组件配置
-  const { page } = useData();
-  let gitalk;
-  if (type.value && type.value == 'gitalk') {
-    gitalk = new Gitalk({
-      clientID: 'Ov23liHoMxJ67QDvSG7H',
-      clientSecret: '0a17b1b962b1ffbe8bf12d7e81714ed95613d07a',
-      repo: 'qiuliw.github.io',
-      owner: 'qiuliw',
-      admin: ['qiuliw'],
-      id: md5(page.value.relativePath),
-      language: 'zh-CN',
-      distractionFreeMode: false,
-      // 默认: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
-      // proxy: 'https://vercel.charles7c.top/github_access_token',
-      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
-
-    });
-  }
-
-  // 渲染评论组件
-  onMounted(() => {
-    if (type.value && type.value == 'gitalk') {
-      gitalk.render('comment-container')
-
-      // 如果点赞，先判断有没有登录
-      let $gc = $('#comment-container');
-      $gc.on('click', '.gt-comment-like', function () {
-        if (!window.localStorage.getItem('GT_ACCESS_TOKEN')) {
-          Message.warning({
-            content: '点赞前，请您先进行登录',
-            closable: true
-          })
-
-          return false
-        }
-        return true
-      })
-      // 提交评论后输入框高度没有重置bug
-      $gc.on('click', '.gt-header-controls .gt-btn-public', function () {
-        let $gt = $('.gt-header-textarea')
-        $gt.css('height', '72px')
-      })
-      // 点击预览时，隐藏评论按钮
-      $gc.on('click', '.gt-header-controls .gt-btn-preview', function () {
-        let pl = $('.gt-header-controls .gt-btn-public');
-        if (pl.hasClass('hide')) {
-          pl.removeClass('hide')
-        } else {
-          // 隐藏
-          pl.addClass('hide')
-        }
-      })
-    }
-  })
+const { title } = useData()
 </script>
 
-<style scoped></style>
+<template>
+  <div :key="title" class="giscus">
+    <component
+      :is="'script'"
+      src="https://giscus.app/client.js"
+      data-repo="qiuliw/qiuliw.github.io"
+      data-repo-id="R_kgDOMJt8Kg"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOMJt8Ks4CgM2e"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="zh-CN"
+      crossorigin="anonymous"
+      async
+    />
+  </div>
+</template>
+
+<style scoped>
+.giscus{
+  margin-top: 10px;
+}
+</style>
