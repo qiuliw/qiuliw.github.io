@@ -1,0 +1,93 @@
+前置：[静态网站部署阿里云esc（ubantu）](静态网站部署阿里云esc（ubantu）.md)
+
+创建密匙
+![](docs/public/img/2024/Pasted%20image%2020240621061903.png)
+github setting选项中加入密匙
+![](docs/public/img/2024/Pasted%20image%2020240621062013.png)
+注意名称与工作流yml中相同
+![](docs/public/img/2024/Pasted%20image%2020240621062030.png)
+
+```yml
+# 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
+#
+name: Deploy VitePress site to Pages
+
+on:
+  # 在针对 `main` 分支的推送上运行。如果你
+  # 使用 `master` 分支作为默认分支，请将其更改为 `master`
+  push:
+    branches: [main]
+
+  # 允许你从 Actions 选项卡手动运行此工作流程
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 只允许同时进行一次部署，跳过正在运行和最新队列之间的运行队列
+# 但是，不要取消正在进行的运行，因为我们希望允许这些生产部署完成
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # 构建工作
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
+      - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消注释
+        with:
+          version: 9
+      # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm # 或 pnpm / yarn
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Install dependencies
+        run: pnpm install  # 或 pnpm install / yarn install / bun install
+      - name: Build with VitePress
+        run: pnpm build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
+
+  # 部署工作
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+     # 部署到 github page
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      # 部署到阿里云
+      - name: Deploy to Aliyun
+        uses: easingthemes/ssh-deploy@v2.1.1
+        env:
+          # 私钥
+          SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+          # 源目录，编译后生成的文件目录
+          SOURCE: "docs/.vitepress/dist"
+          # 服务器ip：换成你的服务器IP
+          REMOTE_HOST: ${{secrets.REMOTE_OST}}
+          # 用户
+          REMOTE_USER: "root"
+          # 目标地址 你在服务器上部署代码的地方
+          TARGET: "/usr/share/nginx/html"
+```
