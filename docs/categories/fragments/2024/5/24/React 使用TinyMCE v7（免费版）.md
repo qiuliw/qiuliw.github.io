@@ -28,7 +28,7 @@ fse.emptyDirSync(path.join(topDir, 'public', 'tinymce'));
 fse.copySync(path.join(topDir, 'node_modules', 'tinymce'), path.join(topDir, 'public', 'tinymce'), { overwrite: true });
 ```
 
-![](docs/public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
+![](../../../../../public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
 
 _package.json_
 
@@ -50,7 +50,7 @@ _.gitignore_
 /public/tinymce/
 ```
 
-![](docs/public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
+![](../../../../../public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
 
 ###### 3、运行`postinstall`将 TinyMCE 复制到`public`目录
 
@@ -58,7 +58,7 @@ _.gitignore_
 npm run postinstall
 ```
 
-![](docs/public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
+![](../../../../../public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
 
 ###### 4、组件编辑器内容换为：
 
@@ -104,7 +104,7 @@ export default function App() {
 }
 ```
 
-![](docs/public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
+![](../../../../../public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
 
 ```javascript
 // ts
@@ -149,7 +149,7 @@ export default function App() {
 }
 ```
 
-![](docs/public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
+![](../../../../../public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
 
 ###### 5、npm run dev
 
@@ -184,7 +184,7 @@ package.json改为
 }
 ```
 
-![](docs/public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
+![](../../../../../public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
 
 > C:\Users\Administrator\Desktop\react-ant-admin\node_modules\.pnpm\fs-extra@11.2.0\node_modules\fs-extra\lib\util\stat.js:81  
 >       throw new Error(`Cannot overwrite directory '${dest}' with non-directory '${src}'.`)   
@@ -209,7 +209,7 @@ fs-extra会对依赖内的文件进行复制，对于依赖的安装管理，npm
 
 将包放到public下
 
-![](docs/public/img/2024/2bb685835f6c33af71fbcd1864b1b3ad_MD5.png)![](docs/public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)​
+![](../../../../../public/img/2024/2bb685835f6c33af71fbcd1864b1b3ad_MD5.png)![](../../../../../public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)​
 
 在init中设置
 
@@ -219,13 +219,13 @@ fs-extra会对依赖内的文件进行复制，对于依赖的安装管理，npm
           language: 'zh_CN',
 ```
 
-![](docs/public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
+![](../../../../../public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
 
-![](docs/public/img/2024/94a806f15a63086b76e000f75be2c688_MD5.png)![](docs/public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)​
+![](../../../../../public/img/2024/94a806f15a63086b76e000f75be2c688_MD5.png)![](../../../../../public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)​
 
 完成
 
-![](docs/public/img/2024/382a7a85db9d2e2dc5a4cbc39f19d2af_MD5.png)![](docs/public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)​编辑
+![](../../../../../public/img/2024/382a7a85db9d2e2dc5a4cbc39f19d2af_MD5.png)![](../../../../../public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)​编辑
 
 参考
 

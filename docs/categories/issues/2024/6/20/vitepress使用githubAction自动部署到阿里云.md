@@ -1,11 +1,11 @@
 前置：[静态网站部署阿里云esc（ubantu）](静态网站部署阿里云esc（ubantu）.md)
 
 创建密匙
-![](docs/public/img/2024/Pasted%20image%2020240621061903.png)
+![](../../../../../public/img/2024/Pasted%20image%2020240621061903.png)
 github setting选项中加入密匙
-![](docs/public/img/2024/Pasted%20image%2020240621062013.png)
+![](../../../../../public/img/2024/Pasted%20image%2020240621062013.png)
 注意名称与工作流yml中相同
-![](docs/public/img/2024/Pasted%20image%2020240621062030.png)
+![](../../../../../public/img/2024/Pasted%20image%2020240621062030.png)
 
 ```yml
 # 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
