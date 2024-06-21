@@ -52,20 +52,6 @@ jobs:
         with:
           path: docs/.vitepress/dist
 
-  # 部署工作
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-      needs: build
-      runs-on: ubuntu-latest
-      name: Deploy
-      steps:
-     # 部署到 github page
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
       # 部署到阿里云
       - name: Deploy to Aliyun
         uses: AEnterprise/rsync-deploy@v1.0
@@ -83,4 +69,22 @@ jobs:
           REMOTE_USER: root
           # 目标地址 你在服务器上部署代码的地方
           TARGET: /usr/share/nginx/html
+
+
+
+
+  # 部署工作
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      needs: build
+      runs-on: ubuntu-latest
+      name: Deploy
+      steps:
+     # 部署到 github page
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
 
