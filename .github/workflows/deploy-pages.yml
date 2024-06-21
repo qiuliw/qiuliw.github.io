@@ -73,7 +73,8 @@ jobs:
           # 私钥
           SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           # 源目录，编译后生成的文件目录
-          SOURCE: "docs/.vitepress/dist"
+          SOURCE: "./docs/.vitepress/dist"
+          RGS: "-avzr --delete" # 设置环境变量 ARGS，用于指定 rsync 命令的参数，包括归档模式、详细输出、压缩传输、递归传输以及删除目标位置中源位置不存在的文件 
           # 服务器ip：换成你的服务器IP
           REMOTE_HOST: "39.96.194.82"
           # 用户

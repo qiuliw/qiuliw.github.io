@@ -89,7 +89,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
       # 部署到阿里云
-      - name: Deploy to Aliyun
+      - name: Deploy to Aliyun # 为此步骤指定一个名称，以便在 GitHub Actions 的控制台中容易识别  
         uses: easingthemes/ssh-deploy@v2.1.1
         env:
           # 私钥
