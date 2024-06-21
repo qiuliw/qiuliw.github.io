@@ -1,7 +1,7 @@
 {
   "name": "qiu-repo",
   "description": "小邱的个人知识库，记录 & 分享个人碎片化、结构化、体系化的技术知识内容。",
-  "author": "Charles7c",
+  "author": "小邱",
   "license": "MIT",
   "private": true,
   "type": "module",

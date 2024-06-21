@@ -16,4 +16,7 @@ export default defineConfig({
       'mermaid': 'mermaid/dist/mermaid.esm.mjs',
     },
   },
+  build:{
+    outDir: 'dist'
+  }
 });
