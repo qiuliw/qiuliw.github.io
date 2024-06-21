@@ -50,7 +50,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vitepress/dist
+          path: "./docs/.vitepress/dist"
       # 部署到阿里云
       - name: Deploy to Aliyun
       # 使用第三方action rsync推送 https://github.com/AEnterprise/rsync-deploy
@@ -65,9 +65,9 @@ jobs:
           # 服务器ip：换成你的服务器IP（IP或者域名domain.com）
           SERVER_IP: ${{ secrets.IP }}
           # 用户 服务器登录名
-          USERNAME: root
+          USERNAME: "root"
           # 目标地址 你在服务器上部署代码的地方
-          SERVER_DESTINATION: /usr/share/nginx/html
+          SERVER_DESTINATION: "/usr/share/nginx/html"
           
   # 部署工作
   deploy:
