@@ -57,10 +57,10 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy
-    steps:
+      needs: build
+      runs-on: ubuntu-latest
+      name: Deploy
+      steps:
      # 部署到 github page
       - name: Deploy to GitHub Pages
         id: deployment
@@ -73,7 +73,7 @@ jobs:
           # 私钥
           DEPLOY_KEY: ${{ secrets.PRIVATE_KEY }}
 
-          RGS: "-avzr --delete" # 设置环境变量 ARGS，用于指定 rsync 命令的参数，包括归档模式、详细输出、压缩传输、递归传输以及删除目标位置中源位置不存在的文件 
+          RGS: "-avzr --delete --exclude='*.pyc'" # 设置环境变量 ARGS，用于指定 rsync 命令的参数，包括归档模式、详细输出、压缩传输、递归传输以及删除目标位置中源位置不存在的文件 
           SERVER_PORT: "22" # SSH端口
           # 源目录，编译后生成的文件目录 ;要推送的文件夹，路径相对于代码仓库的根目录，视情况替换为自己的文件夹路径
           SOURCE: docs/.vitepress/dist
