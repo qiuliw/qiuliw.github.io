@@ -1,11 +1,16 @@
+---
+title: vitepress使用githubAction自动部署到阿里云
+date: 2024/06/21 12:32
+categories:
+  - '"杂碎"逆袭史'
+tags:
+  - vitepress
+  - 部署
+---
 前置：[静态网站部署阿里云esc（ubantu）](静态网站部署阿里云esc（ubantu）.md)
 
-创建密匙
-![](../../../../../public/img/2024/Pasted%20image%2020240621061903.png)
-github setting选项中加入密匙
-![](../../../../../public/img/2024/Pasted%20image%2020240621062013.png)
-注意名称与工作流yml中相同
-![](../../../../../public/img/2024/Pasted%20image%2020240621062030.png)
+# vitepress使用githubAction自动部署到阿里云
+
 
 ```yml
 # 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
@@ -91,3 +96,6 @@ jobs:
           # 目标地址 你在服务器上部署代码的地方
           TARGET: "/usr/share/nginx/html"
 ```
+
+> 服务器记得开放 22端口 给 ssh 连接
+
