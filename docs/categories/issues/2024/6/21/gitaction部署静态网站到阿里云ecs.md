@@ -6,9 +6,10 @@ categories:
 tags:
 ---
 
-前置: [ssh密匙连接阿里云ecs](ssh密匙连接阿里云ecs.md)
 
 # gitaction部署静态网站到阿里云ecs
+
+前置: [ssh密匙连接阿里云ecs](ssh密匙连接阿里云ecs.md)
 
 
 **1. github的setting设置中添加密匙**
