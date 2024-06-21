@@ -62,7 +62,7 @@ npm run postinstall
 
 ###### 4、组件编辑器内容换为：
 
-```javascript
+```jsx
 //JS代码
 import { useRef } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
@@ -106,7 +106,7 @@ export default function App() {
 
 ![](../../../../../public/img/2024/6a738e39d8c5f1fde0fd8c4d18eb18fd_MD5.gif)
 
-```javascript
+```jsx
 // ts
 import React, { useRef } from 'react';  
 import { Editor } from '@tinymce/tinymce-react';  
