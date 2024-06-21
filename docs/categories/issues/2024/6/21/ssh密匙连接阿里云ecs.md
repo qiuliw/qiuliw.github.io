@@ -40,7 +40,7 @@ ssh -i ~/.ssh/zy-server.pem root@公网ip
 
 **2. 通过 config 配置所需信息并通过命令连接实例**
 
-![](docs/public/img/2024/Pasted%20image%2020240621190813.png)
+![](../../../../../public/img/2024/Pasted%20image%2020240621190813.png)
 
 可以在这里将实例的名称改的短一点，刚买回来的是一串随机的英文码，然后开始配置。
 ```yml
