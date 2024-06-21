@@ -26,3 +26,5 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
 }
 ```
 
+## 文档 yml categories 不能为空
+
