@@ -1,5 +1,5 @@
 ---
-title: vitepress使用githubAction自动部署到阿里云
+title: 使用ssh密匙连接阿里云ecs
 date: 2024/06/21 12:32
 categories:
   - '"杂碎"逆袭史'
@@ -9,7 +9,7 @@ tags:
 ---
 
 
-# 使用ssh密匙连接
+# 使用ssh密匙连接阿里云ecs
 
  ## 1、创建密匙
  

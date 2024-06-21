@@ -1,9 +1,8 @@
 ---
-title: gitaction部署静态网站到阿里云ecs
+title: githubAction部署静态网站到阿里云ecs
 date: 2024/06/21 19:38
 categories: 
   - '"杂碎"逆袭史'
-tags:
 ---
 
 
