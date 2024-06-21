@@ -53,11 +53,12 @@ jobs:
           path: docs/.vitepress/dist
       # 部署到阿里云
       - name: Deploy to Aliyun
+      # 使用第三方action rsync推送 https://github.com/AEnterprise/rsync-deploy
         uses: AEnterprise/rsync-deploy@v1.0.2
         env:
           # 私钥
           DEPLOY_KEY: ${{ secrets.PRIVATE_KEY }}
-          RGS: "-e -c -r --delete'" # 设置环境变量 ARGS，用于指定 rsync 命令的参数，包括归档模式、详细输出、压缩传输、递归传输以及删除目标位置中源位置不存在的文件 
+          ARGS: "-e -c -r --delete'" # 设置环境变量 ARGS，用于指定 rsync 命令的参数，包括归档模式、详细输出、压缩传输、递归传输以及删除目标位置中源位置不存在的文件 
           SERVER_PORT: "22" # SSH端口
           # 源目录，编译后生成的文件目录 ;要推送的文件夹，路径相对于代码仓库的根目录，视情况替换为自己的文件夹路径
           FOLDER: docs/.vitepress/dist
