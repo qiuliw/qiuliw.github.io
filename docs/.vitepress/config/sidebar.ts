@@ -14,7 +14,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   // '/courses/mysql/': getItems("courses/mysql"),
   // '/courses/mybatis/': getItems("courses/mybatis"),
   '/courses/react18/': getItems("courses/react18"),
-
+  '/courses/cpp/': getItems("courses/cpp"),
 
   '/bnotes/计算机组成/': getItems("bnotes/计算机组成"),
 
