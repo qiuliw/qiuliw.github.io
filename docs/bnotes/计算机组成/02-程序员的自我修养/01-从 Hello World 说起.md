@@ -1,6 +1,6 @@
 ---
 title: 从 Hello World 说起
-date: 2024/6/15 10:34
+date: 2024/06/15 10:34
 categories:
   - 读书笔记
 tags:

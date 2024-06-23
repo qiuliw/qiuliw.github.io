@@ -1,12 +1,19 @@
 ---
 title: 使用ssh密匙连接阿里云ecs
 date: 2024/06/21 12:32
+isOriginal: false
+author: 他佬
+articleLink: https://blog.csdn.net/weixin_43972437/article/details/102914338
 categories:
   - '"杂碎"逆袭史'
 tags:
   - vitepress
   - 部署
 ---
+
+
+
+
 
 
 # 使用ssh密匙连接阿里云ecs
