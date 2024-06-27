@@ -27,7 +27,7 @@ export const nav: DefaultTheme.Config['nav'] = [
     text: '读书笔记',
     items: [
       {
-        text: '计算机组成', link: '/bnotes/计算机组成/index',activeMatch: '/bnotes/计算机组成/'
+        text: '计算机组成', link: '/bnotes/计算机组成/index',activeMatch: '/bnotes/计算机组成/',
       }
     ],
     activeMatch: '/bnotes/'

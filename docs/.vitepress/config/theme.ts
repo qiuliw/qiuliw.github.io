@@ -77,8 +77,8 @@ export const themeConfig: DefaultTheme.Config = {
   // 自定义扩展: 页脚配置
   footerConfig: {
     showFooter: true, // 是否显示页脚
-    icpRecordCode: '津ICP备2022005864号-2', // ICP备案号
-    publicSecurityRecordCode: '津公网安备12011202000677号', // 联网备案号
-    copyright: `Copyright © 2019-${new Date().getFullYear()} qiuliw` // 版权信息
+    icpRecordCode: '闽ICP备2024059350号', // ICP备案号
+    // publicSecurityRecordCode: '津公网安备12011202000677号', // 联网备案号
+    copyright: `Copyright © 2024-${new Date().getFullYear()} qiuliw` // 版权信息
   }
 }
