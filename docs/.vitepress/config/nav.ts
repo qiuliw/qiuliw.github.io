@@ -14,10 +14,10 @@ export const nav: DefaultTheme.Config['nav'] = [
   {
     text: '我的小册',
     items: [
-      // { text: 'Java基础快速入门', link: '/courses/java/index', activeMatch: '/courses/java/' },
+      { text: 'JavaSE', link: '/courses/java/index', activeMatch: '/courses/java/' },
       // { text: 'MySQL快速入门', link: '/courses/mysql/index', activeMatch: '/courses/mysql/' },
       // { text: 'MyBatis快速入门', link: '/courses/mybatis/index', activeMatch: '/courses/mybatis/' }
-      { text: 'React18', link: '/courses/react18/index', activeMatch: '/courses/react18/' },
+      { text: 'React', link: '/courses/react/index', activeMatch: '/courses/react/' },
       { text: 'C++', link: '/courses/cpp/index', activeMatch: '/courses/cpp/' },
       
     ],

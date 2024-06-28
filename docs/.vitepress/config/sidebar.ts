@@ -10,10 +10,10 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/categories/solutions/': getItemsByDate("categories/solutions"),
   // '/categories/tools/': getItemsByDate("categories/tools"),
 
-  // '/courses/java/': getItems("courses/java"),
+  '/courses/java/': getItems("courses/java"),
   // '/courses/mysql/': getItems("courses/mysql"),
   // '/courses/mybatis/': getItems("courses/mybatis"),
-  '/courses/react18/': getItems("courses/react18"),
+  '/courses/react/': getItems("courses/react"),
   '/courses/cpp/': getItems("courses/cpp"),
 
   '/bnotes/计算机组成/': getItems("bnotes/计算机组成"),
