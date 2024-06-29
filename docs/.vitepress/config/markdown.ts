@@ -9,7 +9,7 @@ export const markdown: MarkdownOptions = {
     dark: 'github-dark-dimmed'
   },
   // lineNumbers: true, // 启用行号
-
+  
   config: (md) => {
     md.use(mathjax3);
     md.use(footnote);
@@ -21,4 +21,9 @@ export const markdown: MarkdownOptions = {
       return htmlResult;
     }
   },
+  image: {
+    // 图片懒加载
+    lazyLoading: true
+  }
+  
 };
