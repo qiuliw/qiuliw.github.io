@@ -11,9 +11,9 @@ categories:
 
 [视频教程](https://www.bilibili.com/video/BV1Rj421o7QF)
 
-# 一、介绍
+## 一、介绍
 
-## 项目创建
+### 项目创建
 
 脚手架创建
 
@@ -42,7 +42,7 @@ cdn创建
 
 ```
 
-## 使用CDN
+### 使用CDN
 
 在 html 代码中导入框架代码：
 
@@ -97,7 +97,7 @@ cdn创建
 </script>
 ```
 
-## React.createElement()认识
+### React.createElement()认识
 
 `React.createElement()` 是 jsx 编译后的 react 代码结果，该 api 是创建一个元素
 
@@ -126,9 +126,9 @@ cdn创建
 </script>
 ```
 
-# 二、JSX
+## 二、JSX
 
-## JSX语法
+### JSX语法
 
 1. 渲染定义的元素，表达式需要 `{ }`
 
@@ -171,7 +171,7 @@ const name = 'Hello Word'
 
 ```
 
-### 变量与函数
+#### 变量与函数
 
 ```jsx
 const count =100
@@ -198,7 +198,7 @@ function App() {
 
 ```
 
-### 数组渲染
+#### 数组渲染
 
 渲染列表
 
@@ -225,7 +225,7 @@ function App() {
 
 ```
 
-### 样式
+#### 样式
 
 行内样式
 
@@ -251,7 +251,7 @@ function App() {
 
 ```
 
-### 三元运算符
+#### 三元运算符
 
 ```jsx
 const isLogin =true
@@ -263,7 +263,7 @@ const isLogin =true
 
 ```
 
-### 事件绑定
+#### 事件绑定
 
 ```
 on + 事件名称 = { 事件处理程序 }
@@ -322,7 +322,7 @@ function App() {
 }
 ```
 
-## JSX渲染机制
+### JSX渲染机制
 
 ```jsx
 var html1=<h1>hello world!!!</h1>
@@ -353,7 +353,7 @@ let virtualDom = {
 }
 ```
 
-## 手动编译JSX文件
+### 手动编译JSX文件
 
 手动（babel）编译 jsx 文件
 
@@ -399,7 +399,7 @@ babel 的练习
 
 如上就是通过 babel 编译工具将 jsx 语法编译成 react 的语法；
 
-# 三、组件
+## 三、组件
 
 在React中，组件分两类：
 
@@ -407,7 +407,7 @@ babel 的练习
 - 类组件，也叫动态组件
 - 
 
-## 无状态组件（函数式组件）
+### 无状态组件（函数式组件）
 
 React中，一个组件就是**首字母大写的函数**，内部存放了组件的视图和逻辑，渲染组件只需要把组件当成标签书写即可
 
@@ -496,7 +496,7 @@ export default One;
 
 - 如果传递的不是字符串，需要使用 `{}` 包裹起来，在组件内部。就可以通过props来接收传递过来的数据了
 
-### 函数式组件渲染机制
+#### 函数式组件渲染机制
 
 1. 基于babel，把JSX代码编译成 `React.createElement()` 的JS代码形式
 2. `createElement()` 方法执行，创建出一个虚拟DOM
@@ -507,13 +507,13 @@ export default One;
    4. One函数就会通过 `props`接收，函数返回DOM元素（就是虚拟DOM）
 3. 最后基于 `root.render` 把虚拟DOM转化成真实DOM，插入到 `#root`容器中
 
-### 无状态
+#### 无状态
 
 里面变量改变，不会使组件重新渲染
 ![](../../../public/img/2024/3074acdf90a1214f56b70dcbd432a4cb.png)
 
 > 除非父组件重新调用这个函数式组件，才会重新渲染此组件
-### Props 是只读的
+#### Props 是只读的
 
 组件无论是使用函数声明还是通过 class 声明，都绝不能修改自身的 props。
 
@@ -530,7 +530,7 @@ delete obj.b // 删除属性
 console.log(obj);
 ```
 
-#### 冻结对象
+##### 冻结对象
 
 ```jsx
 let obj = {
@@ -551,7 +551,7 @@ console.log(obj);// 对象冻结后无法改变
 
 props默认是冻结的，也就是不能修改props的值，即父组件到子组件的单向值传递
 
-#### 密封对象
+##### 密封对象
 
 ```jsx
 let obj = {
@@ -575,7 +575,7 @@ console.log(obj);// a:100,b:2
 * 检测是否被冻结: `Object.isSealed(obj)`
 * 可以修改成员的值，不能删除或添加成员
 
-#### 阻止扩展对象
+##### 阻止扩展对象
 
 ```JS
 let obj = {
@@ -604,7 +604,7 @@ setTimeout(()=>{console.log(obj)})
 props中的属性是只读的，只能使用，不能修改添加删除
 
 
-### Props 组件传参
+#### Props 组件传参
 
 
 ```js
@@ -650,7 +650,7 @@ root.render(
 
 ```
 
-### 插槽
+#### 插槽
 
 使组件有更强的复用性
 
@@ -822,7 +822,7 @@ root.render(
 ```
 
 
-#### 实现具名插槽
+##### 实现具名插槽
 
 ```jsx
 
@@ -874,11 +874,11 @@ root.render(
 ```
 
 
-## 类组件
+### 类组件
 
 React 类组件是 React 早期版本中用于构建组件的一种方式，与函数组件相比，它们提供了更多的生命周期方法和状态管理功能。以下是 React 类组件的一些主要知识点：
 
-### 创建
+#### 创建
 
 1. **创建类组件**：
    - 类组件需要继承自 `React.Component` 或其他 React 组件类。
@@ -896,7 +896,7 @@ export default MyComponent;
 ```
 
 
-### 状态 State
+#### 状态 State
 
    - 类组件内部可以使用状态（state）来保存和管理组件的私有数据。
    - 状态应该使用 `constructor` 构造函数来初始化，然后传入 `props`。记得先调用父类构造 `super(props)`
@@ -1070,7 +1070,7 @@ class One extends Component<Props, {easy?:number,hard?:number}> {
 export default One;
 ```
 
-### 渲染机制
+#### 渲染机制
 
 ![](../../../public/img/2024/fb2d8a214277f94c50c8084f851e003b.png)
 
@@ -1078,12 +1078,12 @@ export default One;
 
 ![](../../../public/img/2024/ed8bd1f3941ad6f9426e1770a4271fac.png)
 
-### React Props
+#### React Props
 
 state 和 props 主要的区别在于 props 是不可变的，而 state 可以根据与用户交互来改变。这就是为什么有些容器组件需要定义 state 来更新和修改数据。 而子组件只能通过 props 来传递数据。(react16.8后函数式子组件可以使用hook来定义state)
 
 
-### 默认 Props
+#### 默认 Props
 
 当 React 渲染一个组件时，它会首先检查是否有为组件提供的 props。如果没有为某个 prop 提供值，React 就会查看该组件是否定义了 defaultProps。如果定义了，React 就会从 defaultProps 中获取该 prop 的默认值，并将其与已提供的 props 合并，形成一个完整的 props 对象，然后传递给组件的实例。
 
@@ -1122,27 +1122,27 @@ class One extends Component{
 
 
 
-## 差别
+### 差别
 
 > 函数式组件只根据props的变化更新视图
 > 类组件则维护state和props。根据两者变化更新视图
 >  函数式组件没有生命钩子
 
 
-# Redux
+## Redux
 
-## 1、介绍
+### 1、介绍
 
 官方文档：https://www.redux.org.cn/
 
 先看深入浅出，再看循序渐进
 
 
-# 实践
-## 浏览器插件
+## 实践
+### 浏览器插件
 
 > react development
-### classnames 优化类名控制
+#### classnames 优化类名控制
 
 classnames 是一个简单的JS库，通过条件动态控制class类名的显示
 
@@ -1178,7 +1178,7 @@ classNames('foo','bar'); // => 'foo bar'
 
 ```
 
-## 动态组件的实现
+### 动态组件的实现
 
 ```jsx
 import { useState } from 'react'
@@ -1214,7 +1214,7 @@ export const Index = () => {
 }
 ```
 
-## 动态组件及子组件调用父组件方法（TS）
+### 动态组件及子组件调用父组件方法（TS）
 
 子组件
 
