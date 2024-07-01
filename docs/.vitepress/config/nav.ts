@@ -20,16 +20,15 @@ export const nav: DefaultTheme.Config['nav'] = [
       // { text: 'MyBatis快速入门', link: '/courses/mybatis/index', activeMatch: '/courses/mybatis/' }
       { text: 'React', link: '/courses/react/index', activeMatch: '/courses/react/' },
       { text: 'C++', link: '/courses/cpp/index', activeMatch: '/courses/cpp/' },
-      
+
     ],
     activeMatch: '/courses/'
   },
   {
     text: '读书笔记',
     items: [
-      {
-        text: '计算机组成', link: '/bnotes/计算机组成/index',activeMatch: '/bnotes/计算机组成/',
-      }
+      { text: '计算机组成', link: '/bnotes/计算机组成/index', activeMatch: '/bnotes/计算机组成/' },
+      { text: '考证比赛', link: '/bnotes/考证比赛/index', activeMatch: '/bnotes/考证比赛/' },
     ],
     activeMatch: '/bnotes/'
   },

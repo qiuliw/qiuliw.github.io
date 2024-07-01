@@ -18,6 +18,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/courses/cpp/': getItems("courses/cpp"),
 
   '/bnotes/计算机组成/': getItems("bnotes/计算机组成"),
+  '/bnotes/考证比赛/': getItems("bnotes/考证比赛"),
 
   
 }
