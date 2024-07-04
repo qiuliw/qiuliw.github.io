@@ -24,6 +24,7 @@ export default withMermaid(
       },
     },
     themeConfig, // 主题配置
+    base: './'
   }),
 );
 
