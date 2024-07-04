@@ -21,9 +21,5 @@ export const markdown: MarkdownOptions = {
       return htmlResult;
     }
   },
-  image: {
-    // 图片懒加载
-    lazyLoading: true
-  }
   
 };
