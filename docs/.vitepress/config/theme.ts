@@ -1,7 +1,6 @@
 import type { DefaultTheme } from 'vitepress';
 import { nav } from './nav';
 import { sidebar } from './sidebar';
-import { algoliaSearchOptions } from './search/algolia-search';
 import { localSearchOptions } from './search/local-search';
 
 export const themeConfig: DefaultTheme.Config = {
