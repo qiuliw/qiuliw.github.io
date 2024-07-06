@@ -122,8 +122,11 @@ vim /etc/nginx/nginx.conf
        listen       80;
         listen       [::]:80;
         server_name  _;
-        root         /usr/share/nginx/html/dist;
-
+        location / {
+            root   /usr/share/nginx/html/dist;
+            index  index.html index.htm;
+	          try_files $uri $uri/ /index.html;
+        }
         # Load configuration files for the default server block.
         include /etc/nginx/default.d/*.conf;
 

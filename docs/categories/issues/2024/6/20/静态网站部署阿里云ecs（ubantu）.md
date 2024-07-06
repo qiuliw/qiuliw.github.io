@@ -11,7 +11,6 @@ tags:
   - 阿里云
   - nginx
 ---
-
 # 静态网站部署阿里云ecs（ubantu）
 
 文章简单的实现浏览器访问自己域名网址
@@ -20,15 +19,15 @@ tags:
 
 ## 1、登陆查看云服务器
 
-
 ![](../../../../../public/img/2024/e14c99f58ab68f73e38aafee36d26c65_MD5.webp)
+
 ## 2、重做服务器系统 --- 并不是必须
 
 ![](../../../../../public/img/2024/89dec7c7662671f993f9be26488d0a67_MD5.webp) image
 
 ![](../../../../../public/img/2024/88d27bbab6a9349883ad1d5739f3e627_MD5.webp)
 
-![](../../../../../public/img/2024/329108a209c420eb5d62b25673a92549_MD5.webp) 
+![](../../../../../public/img/2024/329108a209c420eb5d62b25673a92549_MD5.webp)
 
 第一可以更换操作系统
 
@@ -46,42 +45,40 @@ tags:
 
 ![](../../../../../public/img/2024/ea3f1933280dec6230097bf6ef8c9fc8_MD5.webp)
 
-![](../../../../../public/img/2024/b394b17fe40c09e0f0894a786a0e6381_MD5.webp) 
+![](../../../../../public/img/2024/b394b17fe40c09e0f0894a786a0e6381_MD5.webp)
 
-![](../../../../../public/img/2024/d08caec1d9df1aa2e58b649b4e8b58a0_MD5.webp) 
+![](../../../../../public/img/2024/d08caec1d9df1aa2e58b649b4e8b58a0_MD5.webp)
 
 ## 3、准备连接服务器的工具
 
-
-点击 [finalshell](https://links.jianshu.com/go?to=http%3A%2F%2Fmydown.yesky.com%2Fpcsoft%2F413551229.html) 
+点击 [finalshell](https://links.jianshu.com/go?to=http%3A%2F%2Fmydown.yesky.com%2Fpcsoft%2F413551229.html)
 
 ## 4. 连接服务器
-
 
 ![](../../../../../public/img/2024/441660fd304b9fbe2219224cfc183edc_MD5.webp)
 
 选择 SSH 连接
 
-![](../../../../../public/img/2024/58994c38cb5ae1772ba46728b21dcaf2_MD5.webp) 
+![](../../../../../public/img/2024/58994c38cb5ae1772ba46728b21dcaf2_MD5.webp)
 
-![](../../../../../public/img/2024/38ca2b77fa64883090d276a07ed09ee1_MD5.webp) 
+![](../../../../../public/img/2024/38ca2b77fa64883090d276a07ed09ee1_MD5.webp)
 
 ![](../../../../../public/img/2024/901475c287f3d7ba4e59a0083b5e4252_MD5.webp)
 
-![](../../../../../public/img/2024/2025c731fbd9ad120ba1cc67438b044d_MD5.webp) 
+![](../../../../../public/img/2024/2025c731fbd9ad120ba1cc67438b044d_MD5.webp)
+
 ## 5、nginx 介绍
 
-Nginx 是一款轻量级的 Web 服务器 / 反向代理服务器及电子邮件（IMAP/POP3）代理服务器，在 BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上 nginx 的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用 nginx 网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。  
+Nginx 是一款轻量级的 Web 服务器 / 反向代理服务器及电子邮件（IMAP/POP3）代理服务器，在 BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上 nginx 的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用 nginx 网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。
 负载均衡、反向代理
 
 ## 6、安装 nginx
-
 
 ```
 yum install -y nginx
 ```
 
-![](../../../../../public/img/2024/ebbf75475c650b9e5e4400110efa6b6b_MD5.webp) 
+![](../../../../../public/img/2024/ebbf75475c650b9e5e4400110efa6b6b_MD5.webp)
 
 设置开机启动
 
@@ -90,7 +87,7 @@ systemctl start nginx.service
 systemctl enable nginx.service
 ```
 
-![](../../../../../public/img/2024/ac9217a36d318db24c84ba386cd5d6f2_MD5.webp) 
+![](../../../../../public/img/2024/ac9217a36d318db24c84ba386cd5d6f2_MD5.webp)
 
 浏览器输入服务器公网 IP 地址查看效果
 
@@ -110,8 +107,8 @@ systemctl enable nginx.service
 
 ![](../../../../../public/img/2024/ab7a8a0742fe29acdcfa9ad27cd3bfe0_MD5.webp)image
 
-## 7、然后使用域名代替 访问服务器 IP
 
+## 7、然后使用域名代替 访问服务器 IP
 
 ![](../../../../../public/img/2024/80c252f5df91130bb08eaccfb44deb1b_MD5.webp) image.png
 
@@ -122,7 +119,6 @@ systemctl enable nginx.service
 然后就可以通过域名访问了
 
 ## 9、最最最最最终要的来了！！！
-
 
 想让域名显示自己想要的页面 则需要提前准备一个 index.html 文件（这里不用项目部署）简单实现页面的渲染
 
@@ -137,4 +133,3 @@ cd /usr/share/nginx/html
 ![](../../../../../public/img/2024/018e6dfed0bb11974b8fde7017c521cd_MD5.webp) image.png
 
 再次访问域名就成功了。
-
